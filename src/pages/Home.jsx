@@ -41,7 +41,7 @@ const Home = () => {
           <h1 className='mb-5 pt-3'>Fotbal</h1>
           <NewsCardsList news={adaptedFootballData} />
           <p>
-            Vezi toate știrile legate de tehnologie în secțiunea{" "}
+            Vezi toate știrile legate de fotbal în secțiunea{" "}
             <Link to='/category/football' className='text-secondary'>
               Fotbal
             </Link>

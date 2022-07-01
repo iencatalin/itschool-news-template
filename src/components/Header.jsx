@@ -18,43 +18,49 @@ function Header() {
   return (
     <header>
       <nav className={`${styles.nav} bg-primary w-100`}>
-        <Container className='d-flex justify-content-between align-items-center'>
-          <Link to='/' className='p-3'>
+        <Container className="d-flex justify-content-between align-items-center">
+          <Link to="/" className="p-3">
             <img
-              src='https://www.itschool.ro/images/logo-itschool-dark.svg'
-              alt='itschool logo'
+              src="https://www.itschool.ro/images/logo-itschool-dark.svg"
+              alt="itschool logo"
             />
           </Link>
           <div className={styles.menuIconContainer}>
             <span
               onClick={handleMenuClick}
-              className={`material-icons ${styles.menuIcon} text-light`}>
+              className={`material-icons ${styles.menuIcon} text-light`}
+            >
               {" "}
               menu{" "}
             </span>
             <ul className={dropdownMenuClasses}>
               <li className={isDisplayed ? "container" : null}>
                 <Link
-                  to='/category/technology'
-                  className='p-3 text-uppercase text-light'>
+                  to="/category/technology"
+                  className="p-3 text-uppercase text-light"
+                >
                   Tech
                 </Link>
               </li>
               <li className={isDisplayed ? "container" : null}>
                 <Link
-                  to='/category/football'
-                  className='p-3 text-uppercase text-light'>
+                  to="/category/football"
+                  className="p-3 text-uppercase text-light"
+                >
                   Fotbal
                 </Link>
               </li>
               <li className={isDisplayed ? "container" : null}>
-                  <Link to='/category/fashion' className='p-3 text-uppercase text-light'>
-              Fashion
-            </Link>
+                <Link
+                  to="/category/fashion"
+                  className="p-3 text-uppercase text-light"
+                >
+                  Fashion
+                </Link>
               </li>
-            
+
               <li className={isDisplayed ? "container" : null}>
-                <Link to='/favorites' className='p-3 text-uppercase text-light'>
+                <Link to="/favorites" className="p-3 text-uppercase text-light">
                   Favorite
                 </Link>
               </li>
